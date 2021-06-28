@@ -1,6 +1,8 @@
 <div>
     <h3>{{task.name}}</h3>
     <p *ngIf="task.endDate != undefined">{{task.endDate}}</p>
-    <button (click)="done()">done</button>
-    <button (click)="remove()">remove</button>
+    <ng-container *ngIf="!task.isDone">
+        <button class="btn" (click)="done()">done</button>
+        <button class="btn" (click)="remove()">remove</button>
+    </ng-container>
 </div>
