@@ -1,8 +1,10 @@
-<div>
-    <h3>{{task.name}}</h3>
+<div class="container has-background-grey-lighter mb-5">
+    <h3 class="is-size-5">{{task.name}}</h3>
     <p *ngIf="task.endDate != undefined">{{task.endDate}}</p>
     <ng-container *ngIf="!task.isDone">
-        <button class="btn" (click)="done()">done</button>
-        <button class="btn" (click)="remove()">remove</button>
+        <div class="buttons is-centered mt-2">
+            <button class="btn" (click)="done()" class="button is-rounded is-primary is-small">done</button>
+            <button class="btn" (click)="remove()" class="button is-rounded is-danger is-small">remove</button>
+        </div>
     </ng-container>
 </div>

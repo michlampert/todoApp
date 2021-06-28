@@ -31,6 +31,7 @@ export class TaskManagerService {
   doneTask(task: Task){
     this.taskList = this.taskList.filter(t => t != task)
     task.isDone = true
+    task.endDate = (new Date()).toLocaleDateString()
     this.taskList.push(task)
     this.update()
   }

@@ -1,6 +1,13 @@
-<div>
-    <h1>Welcome in todoApp!</h1>
-    <app-add-task></app-add-task>
-    <app-todo-list></app-todo-list>
-    <app-done-list appNoButtons></app-done-list>
+<div class="container has-text-centered">
+    <h1 class="is-size-1 my-4">Welcome in todoApp!</h1>
+    <div class="columns is-centered">
+        <div class="column is-4 has-background-light">
+            <app-todo-list></app-todo-list>
+            <app-add-task></app-add-task>
+        </div>
+        <div class="column is-1"></div>
+        <div class="column is-4 has-background-light">
+            <app-done-list appNoButtons></app-done-list>
+        </div>
+    </div>
 </div>

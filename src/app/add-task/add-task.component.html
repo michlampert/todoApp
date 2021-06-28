@@ -1,4 +1,8 @@
-<div>
-    <input type="text" [(ngModel)]="name">
-    <button (click)="add()">add</button>
+<div class="field has-addons mx-4">
+    <div class="control">
+        <input type="text" [(ngModel)]="name" class="input is-rounded">
+    </div>
+    <div class="control">
+        <button (click)="add()" class="button is-rounded is-info">add</button>
+    </div>
 </div>
