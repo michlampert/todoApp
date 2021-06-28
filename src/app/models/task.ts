@@ -1,5 +1,5 @@
 export interface Task {
     name: string,
-    addDate?: Date,
+    isDone?: boolean,
     endDate?: Date,
 }
